@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply flex justify-center mt-24 font-sans bg-gradient-to-r from-indigo-900 to-cyan-900 text-gray-300 text-8xl;
+}
+
+button {
+  @apply flex-row rounded-md border border-transparent py-4 px-8 ml-36 text-3xl font-medium bg-blue-800 cursor-pointer;
+}
+
+button:hover {
+  @apply border-blue-800 bg-blue-700;
+}
+
+.timer {
+  @apply flex justify-center text-9xl mt-4;
+}
+
+@media (max-width: 768px) {
+  body {
+    @apply mt-12 text-5xl;
+  }
+
+  button {
+    @apply py-2 px-4 ml-12 text-xl; 
+  }
+
+  .timer {
+    @apply text-6xl mt-2; 
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    @apply mt-8 text-3xl; 
+  }
+
+  button {
+    @apply py-1 px-2 ml-8 mr-6 text-lg; 
+  }
+
+  .timer {
+    @apply text-4xl mt-1 mb-2;
+  }
+}
